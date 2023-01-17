@@ -6,7 +6,7 @@ app.controller('QuizCtrl', function($scope, $http) {
     $scope.questions = response.data;
   });
   
- $scope.submit = function() {
+$scope.submit = function() {
     var correctAnswers = 0;
     angular.forEach($scope.questions, function(question) {
         if (question.type === 'truefalse') {
@@ -19,9 +19,7 @@ app.controller('QuizCtrl', function($scope, $http) {
             }
         } else if (question.type === 'multiplecorrect') {
             if(Array.isArray(question.userAnswer)){
-                var userAnswers = question.userAnswer.sort();
-                var correctAnswers = question.answer.sort();
-                if (angular.equals(userAnswers, correctAnswers)) {
+                if(question.answer.every(answer => question.userAnswer.includes(answer))){
                     correctAnswers++;
                 }
             }
