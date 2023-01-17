@@ -19,7 +19,7 @@
         </div>
         <div ng-if="question.type === 'multiplecorrect'">
           <div ng-repeat="choice in question.choices">
-            <input type="checkbox" ng-model="question.userAnswer" ng-true-value="'{{choice}}'" ng-false-value="''"> {{choice}}
+           <input type="checkbox" ng-model="question.userAnswer[$index]" ng-true-value="'{{choice}}'" ng-false-value="''"> {{choice}}
           </div>
         </div>
       </div>
