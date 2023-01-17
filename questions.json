@@ -1,0 +1,19 @@
+[
+  {
+    "type": "truefalse",
+    "text": "AngularJS is a JavaScript framework for building web applications.",
+    "answer": true
+  },
+  {
+    "type": "multiplechoice",
+    "text": "Which of the following is a feature of AngularJS?",
+    "choices": ["Two-way data binding", "Dependency injection", "Server-side rendering"],
+    "answer": "Two-way data binding"
+  },
+  {
+    "type": "multiplecorrect",
+    "text": "Select all the features of AngularJS",
+    "choices": ["Two-way data binding", "Dependency injection", "Server-side rendering", "Html templates"],
+    "answer": ["Two-way data binding", "Dependency injection"]
+  }
+]
