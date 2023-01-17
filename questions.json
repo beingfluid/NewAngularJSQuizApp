@@ -15,5 +15,5 @@
     "text": "Select all the features of AngularJS",
     "choices": ["Two-way data binding", "Dependency injection", "Server-side rendering", "Html templates"],
     "answer": ["Two-way data binding", "Dependency injection"]
-  }
+}
 ]
